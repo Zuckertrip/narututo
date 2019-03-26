@@ -47,3 +47,6 @@ aside {
 	font-size:20;
 	text-align: center;
 }
+#basechakras, #allchakras {
+	cursor:pointer;
+}

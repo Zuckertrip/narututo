@@ -47,7 +47,7 @@ function combineChakra(chakras) {
 	return "Jiton";
 	} else 
 	{
-		return "Combinaison inexistante"
+		return "default"
 	}
 		
 }
@@ -56,12 +56,24 @@ function has(list, key) {
 	return -1 != list.indexOf(key);
 }
 
-
-
-document.querySelector("#combine").onclick = function(){
-	document.querySelectorAll(".shinobi").forEach(function (element) {
+function clearAside () {
+	document.querySelectorAll("aside div").forEach(function (element) {
 		element.classList.add("hidden");
 	});
+}
+
+document.querySelector("#basechakras").onclick = function(){
+	clearAside();
+	document.querySelector("#basechakrasimg").classList.remove("hidden");
+};
+
+document.querySelector("#allchakras").onclick = function(){
+	clearAside();
+	document.querySelector("#allchakrasimg").classList.remove("hidden");
+};
+
+document.querySelector("#combine").onclick = function(){
+	clearAside();
 	var chakra1 = document.querySelector("#chakra1").value.toLowerCase();
 	var chakra2 = document.querySelector("#chakra2").value.toLowerCase();
 	var chakra3 = document.querySelector("#chakra3").value.toLowerCase();
@@ -71,26 +83,19 @@ document.querySelector("#combine").onclick = function(){
 };
 
 document.querySelector("#sharingan-button").onclick = function(){
-	document.querySelectorAll(".pupille").forEach(function (element) {
-		element.classList.add("hidden");
-	});
+	clearAside();
 	document.querySelector("#sharingan-img").classList.remove("hidden");
 };
 document.querySelector("#mangekyousharingan-button").onclick = function(){
-	document.querySelectorAll(".pupille").forEach(function (element) {
-		element.classList.add("hidden");
-	});
+	clearAside();
 	document.querySelector("#mangekyousharingan-img").classList.remove("hidden");
 };
 document.querySelector("#byakugan-button").onclick = function(){
-	document.querySelectorAll(".pupille").forEach(function (element) {
-		element.classList.add("hidden");
-	});
+	clearAside();
 	document.querySelector("#byakugan-img").classList.remove("hidden");
 };
 document.querySelector("#rinnegan-button").onclick = function(){
-	document.querySelectorAll(".pupille").forEach(function (element) {
-		element.classList.add("hidden");
-	});
+	clearAside();
 	document.querySelector("#rinnegan-img").classList.remove("hidden");
 };
+

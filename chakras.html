@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<link rel="icon" href="https://www.clipartmax.com/png/middle/35-359640_205-best-geek-logos-images-on-pinterest-naruto-hidden-leaf-village-symbol.png" />
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="animation.css">
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<h1>Narututo</h1>
+		</header>
+		<main>
+			<h2 id="basechakras">Les chakras de base</h2>
+		</main>
+		<aside>
+			<div id="basechakrasimg" class="centered hidden">
+				<img width="500" src="http://idata.over-blog.com/0/12/21/44/naruto.gif"/>
+			</div>
+		</aside>
+		<script type="text/javascript">
+			document.querySelector("#basechakras").onclick = function(){
+				if (document.querySelector("#basechakrasimg").classList.contains("hidden")){
+					document.querySelector("#basechakrasimg").classList.remove("hidden");
+				} else {
+					document.querySelector("#basechakrasimg").classList.add("hidden");
+				}
+			}
+		</script>
+	</body>
+</html>
