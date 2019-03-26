@@ -1,0 +1,49 @@
+h1 {
+	font-size:50;
+	color: red;
+	text-align: center;
+	font-family: 'Indie Flower', cursive;
+}
+h2 {
+	font-size: 30;
+	text-decoration: underline;
+	color: green;
+	text-align: center;
+	font-family: 'Indie Flower', cursive;
+}
+.centered {
+	text-align: center;
+	}
+button, select {
+	margin: 2px;
+	background-color: white;
+	border-style: solid;
+	border-width: 2px;
+	border-color: green;
+	border-radius: 120px;
+}
+body {
+	display: grid;
+	grid-template-areas:
+	'title title'
+	'txt image';
+	grid-template-columns: 50% 50%;
+	grid-auto-rows: 100px 1fr;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+header {
+	grid-area: title;
+}
+main {
+	grid-area: txt;
+}
+aside {
+	grid-area: image;
+}
+#combinedChakra {
+	color: orangered;
+	font-size:20;
+	text-align: center;
+}
