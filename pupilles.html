@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <link rel="icon" href="https://www.clipartmax.com/png/middle/35-359640_205-best-geek-logos-images-on-pinterest-naruto-hidden-leaf-village-symbol.png" />
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="animation.css">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">  
+    </head>
+    <body>
+        <header>
+            <h1>Narututo</h1>
+        </header>
+        <main>
+            <h2>Les pupilles</h2>
+            <div class="centered">
+                <button id="sharingan-button" type="button">Sharingan</button>
+                <button id="mangekyousharingan-button" type="button" >Mangekyou Sharingan</button>
+                <button id="byakugan-button" type="button" >Byakugan</button>
+                <button id="rinnegan-button" type="button">Rinnegan</button>
+            </div>
+        </main>
+        <aside>
+            <div id="sharingan-img" class="centered pupille hidden">
+                <img src= "https://i.redd.it/pa19lqql1cl11.jpg"/>
+            </div>
+            
+            <div id="mangekyouSharingan-img" class="centered pupille hidden">
+                <img src= "https://i.ytimg.com/vi/WgtYSq8tiS0/maxresdefault.jpg"/>
+            </div>
+            
+            <div id="byakugan-img" class="centered pupille hidden"style="transform: scaleX(-1)">
+                <img src= "https://c2.staticflickr.com/4/3089/2911086475_289fda5807_z.jpg?zz=1"/>
+            </div>
+                
+            <div id="rinnegan-img" class="centered pupille hidden" style="transform: scaleX(-1)">
+                <img src= "https://i.redd.it/dwruj54wq6f11.png"/>
+            </div>
+        </aside>
+        <script>
+            document.querySelector("#sharingan-button").onclick = function(){
+                clearAside();
+                document.querySelector("#sharingan-img").classList.remove("hidden");
+            };
+            document.querySelector("#mangekyousharingan-button").onclick = function(){
+                clearAside();
+                document.querySelector("#mangekyousharingan-img").classList.remove("hidden");
+            };
+            document.querySelector("#byakugan-button").onclick = function(){
+                clearAside();
+                document.querySelector("#byakugan-img").classList.remove("hidden");
+            };
+            document.querySelector("#rinnegan-button").onclick = function(){
+                clearAside();
+                document.querySelector("#rinnegan-img").classList.remove("hidden");
+             };
+             function clearAside () {
+	            document.querySelectorAll("aside div").forEach(function (element) {
+		        element.classList.add("hidden");
+	            });
+            }
+        </script>
+    </body>
+</html>
